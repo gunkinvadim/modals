@@ -2,11 +2,10 @@ window.onload = function(e) {
 
     var openBtn = document.querySelectorAll('.button-open');
 
-
     function Popup(){
 
-
         var body = document.querySelector('body');
+
         var overlay = document.createElement('div');
         overlay.classList.add('overlay');
         body.append(overlay);

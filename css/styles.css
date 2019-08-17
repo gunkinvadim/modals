@@ -1,5 +1,26 @@
 html, body {
     margin: 40px;
+    text-align: center;
+}
+
+.button-container {
+    vertical-align: middle
+}
+
+.button-open {
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.button-open:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.button-open:focus {
+    outline: none;
 }
 
 .overlay {
@@ -10,13 +31,14 @@ html, body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup {
     display: none;
     position: fixed;
     z-index: 2;
+    border-radius: 5px;
     padding: 20px;
     background-color: #ffffff;
     width: 40%;
@@ -34,7 +56,12 @@ html, body {
     background: none;
     font-size: 30px;
     font-weight: 700;
-    color: red;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.button-close:hover {
+    color: rgba(255, 0, 0, 1);
+    cursor: pointer;
 }
 
 .button-close:focus {
